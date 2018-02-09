@@ -31,3 +31,4 @@ testem.log
 
 # css
 src/**/*.css
+src/*.css
