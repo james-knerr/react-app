@@ -92,14 +92,15 @@ class GameComponent extends React.Component {
 
     return (
       <div className="game">
-      <div className="game-info"></div>
         {/*<div className={this.state.xIsNext ? "game-info active" : "game-info"}>
         <div className="player-header active">Player X</div>
         <ol>{moves}</ol>
       </div>*/}
         <div className="game-container">
           <div className="game-status">
+          <span style={{flex: "1"}}>
             {status}
+            </span>
             <div className="game-buttons">
               <button className="raised-button" onClick={() => this.restartGame()}>Restart</button>
               <span>
@@ -130,7 +131,6 @@ class GameComponent extends React.Component {
             />
           </div>
         </div>
-        <div className="game-info"></div>
         {/*
           <div  className={this.state.xIsNext ? "game-info" : "game-info active"}>
           <div className="player-header">Player O</div>
