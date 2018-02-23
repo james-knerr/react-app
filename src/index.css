@@ -1,4 +1,13 @@
-body {
+html {
   margin: 0;
-  padding: 0;
-  font-family: sans-serif; }
+  height: 100%; }
+
+body {
+  height: 100%;
+  font-family: Roboto,Helvetica Neue Light,Helvetica Neue,Helvetica,Arial,Lucida Grande,sans-serif;
+  margin: 0px;
+  overflow: hidden;
+  background: #fafafa; }
+
+#root {
+  height: 100%; }

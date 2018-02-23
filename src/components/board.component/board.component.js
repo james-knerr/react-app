@@ -1,18 +1,26 @@
 import React, { Component } from 'react';
-import SquareComponent from '../square.component/square.component';
-import styles from './board.component.css';
+import boardStyles from './board.component.css';
+import squareStyles from '../square.component/square.component.css';
+
+function SquareComponent(props) {
+  return (
+    <button className="square" onClick={props.onClick}>
+      {props.value}
+    </button>
+  );
+}
 
 class BoardComponent extends React.Component {
     renderSquare(i) {
-      return <SquareComponent />;
+      return (
+      <SquareComponent
+      value={this.props.squares[i]}
+      onClick={() => this.props.onClick(i)}/>
+      );
     }
-  
     render() {
-      const status = 'Next player: X';
-  
       return (
         <div>
-          <div className="status">{status}</div>
           <div className="board-row">
             {this.renderSquare(0)}
             {this.renderSquare(1)}

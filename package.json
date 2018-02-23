@@ -7,7 +7,9 @@
     "npm-run-all": "^4.1.2",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
-    "react-scripts": "1.1.0"
+    "react-icons": "^2.2.7",
+    "react-scripts": "1.1.0",
+    "react-tippy": "^1.2.2"
   },
   "scripts": {
     "build-css": "node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/",

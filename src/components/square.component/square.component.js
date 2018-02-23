@@ -1,14 +1,7 @@
-import React, { Component } from 'react';
-import styles from './square.component.css';
-
-class SquareComponent extends React.Component {
-    render() {
+export function SquareComponent(props) {
       return (
-        <button className="square">
-          {/* TODO */}
+        <button className="square" onClick={props.onClick}>
+          {props.value}
         </button>
       );
-    }
-  }
-  
-export default SquareComponent;
+}
