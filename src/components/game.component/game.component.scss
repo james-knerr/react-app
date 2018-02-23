@@ -76,6 +76,15 @@
     transition: background .4s cubic-bezier(.25,.8,.25,1),box-shadow 280ms cubic-bezier(.4,0,.2,1);
 
 }
+.icon-button.disabled {
+    background-color: hsl(260, 0%, 63%);
+    cursor:not-allowed;
+}
+.icon-button.disabled:active {
+    background-color: hsl(260, 0%, 63%);
+    cursor:not-allowed;
+    box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12);
+}
 .icon-button.lg {
     width: 56px;
     height: 56px;

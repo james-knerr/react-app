@@ -110,14 +110,14 @@ class GameComponent extends React.Component {
                     animation="scale"
                     size="small"
                     distance="18"
-                  > <button style={{ display: (canUndo ? "inline-block" : "none") }} className="icon-button sm" onClick={() => this.jumpTo(this.state.stepNumber - 1)}><FaRotateLeft /></button>
+                  > <button className={canUndo ? "icon-button sm" : "icon-button sm disabled"} onClick={() => {if (canUndo) {this.jumpTo(this.state.stepNumber - 1) }}}><FaRotateLeft /></button>
                   </Tooltip>
                   <Tooltip title="Redo"
                     position="bottom"
                     animation="scale"
                     size="small"
                     distance="18">
-                    <button style={{ display: (canRedo ? "inline-block" : "none") }} className="icon-button sm" onClick={() => this.jumpTo(this.state.stepNumber + 1)}><FaRepeat /></button>
+                    <button className={canRedo ? "icon-button sm" : "icon-button sm disabled"} onClick={() => {if (canRedo) {this.jumpTo(this.state.stepNumber + 1) }}}><FaRepeat /></button>
                   </Tooltip>
                 </div>
               </span>
